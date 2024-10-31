@@ -1,0 +1,96 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Hanrui's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+
+## My Introduction
+
+I'm a first-year master student majoring in biostatistics.
+
+
+# Link to page within the site
+
+[About me](about.html)
+
+
+
+# My Academic and Professional Experience
+
+## Education
+
+**Columbia University**, Mailman School of Public Health (New York, NY)
+
+* Master of Science in Biostatistics (September 2024 - Expected May 2026)
+
+* Relevant Coursework: Biostatistical Methods, Data Science, Principles of Epidemiology, Probability
+
+**The University of Michigan—Ann Arbor**, College of Literature, Science, and the Arts (Ann Arbor, MI)
+
+* Bachelor of Science in Statistics (August 2022 - May 2024)
+
+* Relevant Coursework: Statistical Computing, Applied Regression Analysis, Computational Methods in Statistics and Data Science, Elementary Programming Concepts, Discrete Math, Topics in Biostatistics, Intro to Theoretical Statistics, Data Mining and Statistical Learning, Bayesian Data Analysis, Capstone
+
+* Honors: University Honors (Fall 2023, Winter 2023)
+
+## Technical and Language Skills
+
+* Technical/Software Skills: R, STAN, Latex, Git, Java, C++, Microsoft Office (Excel, PowerPoint, Word)
+
+* Language Skills: Mandarin Chinese (native), English (fluent), Korean (basic)
+
+## Research Experience
+
+### Computational Methods in Statistics and Data Science Research
+
+**Explore Glass Classification and How it Could Aid in Crime Investigation** (January - April 2023)
+
+* Led a detailed analysis of the Kaggle glass dataset, exploring 10 attributes and employing advanced statistical methods
+* Utilized 4 methods in R: Monte Carlo Hypothesis Test, Permutation Kolmogorov‐Smirnov Test, Bootstrap Hypothesis Test, and PermutationTest for Mean Difference to identify the most informative glass attribute
+* Implemented data simulation techniques, significantly enhancing model prediction performance and contributing to a nuanced understanding of small group differences
+
+### Analyst of Real Datasets
+
+**Exploring Health Data and Key Influence on Public Health Outcomes** (October - December 2023)
+
+* Applied Lasso regression for feature reduction, incorporated KNN model and regression trees to integrate the findings about the variables shaping the health outcomes into the modeling process
+* Analyzed the results from the data and generated 8 figures with clarity and comprehensiveness, providing insights into potential health implications
+* Established connections between identified variables and health outcomes to understand the dataset
+
+### Kaggle Competition
+
+**Explore Factors Influencing student performance on a test of US History** (November - December 2023)
+
+* Conducted comprehensive data wrangling, including transforming factor variables into dummies and incorporating squared terms for numerical variables
+* Implemented random forest model with 5-fold cross-validation and parameter tuning for optimal performance and achieved a testing R-squared of 0.62
+* Applied XGBoost method to improve testing R-squared with a 0.22 increase using regularization techniques and capturing non-linear relationships and exceeded the competition requirement of 0.75
+
+### Statistical Computing Analyst
+
+**Twitter Retweets Analysis of Sitting Member during the 115th Congress** (December 2022)
+
+* Utilized R software and functions like mutate and summarize for in-depth analysis of retweet data related to the American Health Care Act (AHCA) and Affordable Care Act (ACA)
+* Systematically collected and categorized data on 519 congress members’ chamber, party, gender, state, and birthday, enhancing the comprehensiveness of the analysis
+* Identified the most common hashtags and patterns in retweet behavior during the 115th Congress, providing valuable insights for researchers
+
+### American Statistical Association’s DataFest
+
+**Participate in the Analysis of Large Dataset** (April 2022)
+
+* Used R to subset the dataset to have the cleaned-up data and take less time to perform analyses and visualization, and used Excel to summarize the numerical variables in the dataset
+* Led the group to create the final report, adding business values and insights to the project
+* Contributed to enhancing data analysis techniques and effectively communicating findings to a diverse audience
+
+
+# Links to my github
+
+[Hanrui's github](https://github.com/hanruili)
+
+
