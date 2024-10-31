@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "NYNOAA Plots"
+    - text: "NY NOAA Plots"
       href: problem2_plots.html
     - text: "Dashboard"
       href: problem2_dashboard.html
