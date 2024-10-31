@@ -1,0 +1,93 @@
+---
+title: "NY NOAA Plots"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+data("ny_noaa")
+
+ny_noaa =
+  ny_noaa |>
+  mutate(
+    year = lubridate::year(date),
+    month = lubridate::month(date),
+    tmin = as.numeric(tmin),
+    tmax = as.numeric(tmax)
+  ) |>
+  filter(
+         prcp %in% 500:1500) |>
+  drop_na()
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A: Scatterplot
+
+```{r}
+ny_noaa |>
+  plot_ly(
+    x = ~tmin, 
+    y = ~tmax, 
+    type = 'scatter', 
+    mode = 'markers',
+    color = ~month, 
+    colors = "viridis",
+    text = ~paste("Month:", month, "\nPrcp:", prcp),
+    marker = list(opacity = 0.6)) |>
+  layout(
+    title = "Scatterplot of Minimum vs Maximum Temperature",
+    xaxis = list(title = "Min Temperature"),
+    yaxis = list(title = "Max Temperature"))
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B: Boxplot
+
+```{r}
+ny_noaa |>
+  plot_ly(
+    x = ~factor(month, labels = month.name[1:12]), 
+    y = ~prcp, 
+    type = "box", 
+    color = ~factor(month, labels = month.name[1:12]),
+    colors = "viridis") |>
+  layout(
+    title = "Boxplot of Precipitation by Month",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Precipitation (mm)"))
+```
+
+
+### Chart C: Bar Plot
+
+```{r}
+ny_noaa |>
+  count(year) |>
+  mutate(year = reorder(year, n)) |> 
+  plot_ly(
+    x = ~year, 
+    y = ~n, 
+    type = "bar",
+    color = ~year,
+    colors = "viridis"
+    ) |>
+  layout(
+    title = "Number of Observations by Year",
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Count of Observations")
+  )
+```
+

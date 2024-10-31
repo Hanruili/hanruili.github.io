@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "My Awesome Website"
 output: 
   html_document:
     toc: true
@@ -10,16 +10,15 @@ output:
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
+# About this website
 
-## My Introduction
-
-I'm a first-year master student majoring in biostatistics.
+[About](about.html)
 
 
-# Link to page within the site
+# Problem 2
 
-[About me](about.html)
-
+* [NYNOAA Plots](problem2_plots.html)
+* [Dashboard](problem2_dashboard.html)
 
 
 # My Academic and Professional Experience
@@ -91,6 +90,6 @@ I'm a first-year master student majoring in biostatistics.
 
 # Links to my github
 
-[Hanrui's github](https://github.com/hanruili)
+[github link for homework 4](https://github.com/hanruili/hanruili.github.io.git)
 
 
